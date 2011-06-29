@@ -1,7 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-
-
 ;; Custom File
 (setq custom-file "~/.emacs.d/jpterry/custom.el")
 (when (file-exists-p custom-file) (load custom-file))
@@ -25,7 +23,6 @@
 (setq backup-directory-alist `(("." . "~/.emacs_saves")))
 
 ;; Basic Settings
-
 ;; Disable Startup Scree
 (setq inhibit-startup-message t)
 
@@ -54,6 +51,7 @@
                  (cons 'height (/ (- (x-display-pixel-height) 200) (frame-char-height)))))))
 
 (set-frame-size-according-to-resolution)
+
 
 
 (load "jpterry/org")

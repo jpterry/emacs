@@ -34,3 +34,6 @@
  ((string-match "23.2.1" (emacs-version))
   (require 'epa-file)
   (epa-file-enable)))
+
+; Set M-Ret to respect content (useful, since aquamacs overrides C-Ret which usually bind to this func)
+(setq org-insert-heading-respect-content t)
