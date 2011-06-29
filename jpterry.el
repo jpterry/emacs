@@ -53,6 +53,12 @@
 (set-frame-size-according-to-resolution)
 
 
+;ELPA Emacs package stuff
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
 
 (load "jpterry/org")
 (load "jpterry/osx")
