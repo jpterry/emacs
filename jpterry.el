@@ -52,14 +52,9 @@
 
 (set-frame-size-according-to-resolution)
 
+(server-start)
 
-;ELPA Emacs package stuff
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
-
-
+(load "jpterry/theme")
+(load "jpterry/git")
 (load "jpterry/org")
 (load "jpterry/osx")
-(load "jpterry/theme")
