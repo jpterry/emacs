@@ -36,4 +36,4 @@
   (epa-file-enable)))
 
 ; Set M-Ret to respect content (useful, since aquamacs overrides C-Ret which usually bind to this func)
-(setq org-insert-heading-respect-content t)
+;(setq org-insert-heading-respect-content t)
