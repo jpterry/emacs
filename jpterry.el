@@ -1,3 +1,6 @@
+; Add /usr/local/bin to path
+(setenv "PATH" (concat "/usr/local/bin" ":" (getenv "PATH")))
+
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
 ;; Custom File
