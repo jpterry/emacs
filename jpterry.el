@@ -58,6 +58,5 @@
 (server-start)
 
 (load "jpterry/theme")
-(load "jpterry/git")
 (load "jpterry/org")
 (load "jpterry/osx")

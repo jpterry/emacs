@@ -1,3 +1,3 @@
 ;; Theme
 
-(load-theme 'deeper-blue)
+(if window-system (load-theme 'deeper-blue))

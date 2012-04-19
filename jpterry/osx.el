@@ -2,4 +2,5 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
-(tool-bar-mode -1)
+(if window-system
+    (tool-bar-mode -1))
