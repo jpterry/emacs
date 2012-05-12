@@ -4,7 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
 ;; Custom File
-(setq custom-file "~/.emacs.d/jpterry/custom.el")
+(setq custom-file "~/.emacs.d/jpterry.d/custom.el")
 (when (file-exists-p custom-file) (load custom-file))
 
 ;; Put autosave files in a proper place,
@@ -26,8 +26,11 @@
 (setq backup-directory-alist `(("." . "~/.emacs_saves")))
 
 ;; Basic Settings
-;; Disable Startup Scree
+;; Disable Startup Screen
 (setq inhibit-startup-message t)
+
+;; Disable scratch buffer comment
+(setq initial-scratch-message nil)
 
 ;; "y or n" instead of "yes or no"
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -57,6 +60,6 @@
 
 (server-start)
 
-(load "jpterry/theme")
-(load "jpterry/org")
-(load "jpterry/osx")
+(load "jpterry.d/theme")
+(load "jpterry.d/org")
+(load "jpterry.d/osx")
